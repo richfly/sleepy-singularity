@@ -7,7 +7,9 @@ import FormattedDate from '../components/FormattedDate.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, tags= [] } = Astro.props;
+  // Provide a default empty array if tags is undefined
+
 ---
 
 <html lang="en">
@@ -74,7 +76,9 @@ const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.prop
 							}
 						</div>
 						<h1 class="font-weight-700">{title}</h1>
-						<p class="text-slate-400/50">tags: {tags.join(', ')}</p>
+						{tags && tags.length > 0 && (
+                            <p class="text-slate-400/50">tags: {tags.join(', ')}</p>
+                        )}
 						<hr />
 					</div>
 					<slot />

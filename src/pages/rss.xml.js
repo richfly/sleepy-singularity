@@ -17,7 +17,7 @@ export async function GET(context) {
     items: sortedPosts.map((post) => ({
       ...post.data,
       link: `/blog/${post.slug}/`,
-      customData: post.data.tags
+      customData: Array.isArray(post.data.tags)
         ? `<tags>${post.data.tags.join(", ")}</tags>`
         : "",
     })),
