@@ -1,1 +1,3 @@
-Using the blog format.
+# Todo
+
+- Write a blog post a day
