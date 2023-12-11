@@ -78,8 +78,14 @@ const { title, description, pubDate, updatedDate, heroImage, tags= [] } = Astro.
 						</div>
 						<h1 class="font-weight-700">{title}</h1>
 						{tags && tags.length > 0 && (
-                            <p class="text-slate-400/50">{tags.join(', ')}</p>
-                        )}
+							<div class="flex-wrap gap-2">
+								{tags.map(tag => (
+									<span class="bg-blue-500/50 text-white text-sm py-1 px-3 rounded-full">
+										{tag}
+									</span>
+								))}
+							</div>
+						)}
 						<hr />
 					</div>
 					<slot />
