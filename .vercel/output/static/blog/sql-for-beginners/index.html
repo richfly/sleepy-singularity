@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-bvzihdzo> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.0.2"><!-- Font preloads --><link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://example.com/blog/sql-for-beginners/"><!-- Primary Meta Tags --><title>SQL for beginners</title><meta name="title" content="SQL for beginners"><meta name="description" content="Where to Learn and Where to Practice"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://example.com/blog/sql-for-beginners/"><meta property="og:title" content="SQL for beginners"><meta property="og:description" content="Where to Learn and Where to Practice"><meta property="og:image" content="https://example.com/blog-placeholder-1.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://example.com/blog/sql-for-beginners/"><meta property="twitter:title" content="SQL for beginners"><meta property="twitter:description" content="Where to Learn and Where to Practice"><meta property="twitter:image" content="https://example.com/blog-placeholder-1.jpg"><link rel="stylesheet" href="/_astro/about.4E-AUkmP.css" />
+<style>main[data-astro-cid-bvzihdzo]{width:calc(100% - 2em);max-width:100%;margin:0}.hero-image[data-astro-cid-bvzihdzo]{width:100%}.hero-image[data-astro-cid-bvzihdzo] img[data-astro-cid-bvzihdzo]{display:block;margin:0 auto;border-radius:12px;box-shadow:var(--box-shadow)}.prose[data-astro-cid-bvzihdzo]{width:720px;max-width:calc(100% - 2em);margin:auto;padding:1em;color:rgb(var(--gray-dark))}.title[data-astro-cid-bvzihdzo]{margin-bottom:1em;padding:1em 0;text-align:center;line-height:1}.title[data-astro-cid-bvzihdzo] h1[data-astro-cid-bvzihdzo]{margin:0 0 .5em}.date[data-astro-cid-bvzihdzo]{margin-bottom:.5em;color:rgb(var(--gray))}.last-updated-on[data-astro-cid-bvzihdzo]{font-style:italic}
+</style><script type="module" src="/_astro/hoisted.rfglzoOR.js"></script></head> <body data-astro-cid-bvzihdzo> <header data-astro-cid-3ef6ksr2> <nav data-astro-cid-3ef6ksr2> <h2 data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2>Rich Fly</a></h2> <div class="internal-links" data-astro-cid-3ef6ksr2> <a href="/" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg> Home </a>  <a href="/blog" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg> Blog </a>  <a href="/about" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg> About </a>  </div> <div class="social-links" data-astro-cid-3ef6ksr2> <a href="https://twitter.com/astrodotbuild" target="_blank" data-astro-cid-3ef6ksr2> <span class="sr-only" data-astro-cid-3ef6ksr2>Follow Astro on Twitter</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" data-astro-cid-3ef6ksr2><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" data-astro-cid-3ef6ksr2></path></svg> </a> <a href="https://github.com/withastro/astro" target="_blank" data-astro-cid-3ef6ksr2> <span class="sr-only" data-astro-cid-3ef6ksr2>Go to Astro's GitHub repo</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" data-astro-cid-3ef6ksr2><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" data-astro-cid-3ef6ksr2></path></svg> </a> </div> </nav> </header>  <main data-astro-cid-bvzihdzo> <article data-astro-cid-bvzihdzo> <div class="hero-image" data-astro-cid-bvzihdzo> <img width="1020" height="510" src="/blog-placeholder-3.jpg" alt="" data-astro-cid-bvzihdzo> </div> <div class="prose" data-astro-cid-bvzihdzo> <div class="title" data-astro-cid-bvzihdzo> <div class="date" data-astro-cid-bvzihdzo> <time datetime="2023-12-11T08:00:00.000Z"> Dec 11, 2023 </time>  </div> <h1 class="font-weight-700" data-astro-cid-bvzihdzo>SQL for beginners</h1> <div class="flex-wrap gap-2" data-astro-cid-bvzihdzo> <span class="bg-blue-500/50 text-white text-sm py-1 px-3 rounded-full" data-astro-cid-bvzihdzo> sql </span><span class="bg-blue-500/50 text-white text-sm py-1 px-3 rounded-full" data-astro-cid-bvzihdzo> beginner </span> </div> <hr data-astro-cid-bvzihdzo> </div>  <h1 id="sql-structured-query-language">SQL, Structured Query Language</h1>
+<p>SQL, is the language of databases and a powerful way to learn about your products users. There are numerous places to start with SQL and ways to understand it.
+At the bottom of this post in the <a href="#learn">“Places to Learn and Practice”</a> section I provided a few sites to check out.</p>
+<hr/>
+<br/>
+<h2 id="format-of-sql">Format of SQL</h2>
+<p>SQL is a structured query language, so it has as stated a structure that you can learn and use to create queries. The beginning of the structure is laid out below;</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#F97583">select</span><span style="color:#E1E4E8"> column1</span></span>
+<span class="line"><span style="color:#E1E4E8">    , column2</span></span>
+<span class="line"><span style="color:#E1E4E8">    , column3</span></span>
+<span class="line"><span style="color:#F97583">from</span><span style="color:#F97583"> table</span></span>
+<span class="line"><span style="color:#6A737D">/*</span></span>
+<span class="line"><span style="color:#6A737D">think of a table like a</span></span>
+<span class="line"><span style="color:#6A737D">sheet in google sheets or excel</span></span>
+<span class="line"><span style="color:#6A737D">*/</span></span></code></pre>
+<br/>
+<p><img src="/blog-spreadsheet.jpeg" alt="example sheet" title="sheet"/></p>
+<br/>
+<p>So what we did in the above if this was excel or google sheets is specified the columns
+and the sheet as if we had multiple sheets. This allows us to only see the data we
+want from that sheet and not copy it all. In the below we would be copying everything
+from the sheet.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#F97583">select</span><span style="color:#F97583"> *</span><span style="color:#6A737D"> --the star is kind of like a select all</span></span>
+<span class="line"><span style="color:#F97583">from</span><span style="color:#F97583"> table</span></span></code></pre>
+<br/>
+<hr/>
+<br/>
+<h2 id="sum-questions-of-the-data">SUM() questions of the data 😹</h2>
+<p>Now that isn’t very helpful so some of what we want to do is determine a question. So for instance lets say, ”<strong>What is the total for the bids?</strong>“.</p>
+<p>Now what we do is start using a SQL Function or Keyword. The SUM keyword can be used on a specific column. Like below;</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#F97583">SELECT</span><span style="color:#E1E4E8"> column1</span></span>
+<span class="line"><span style="color:#E1E4E8">    , </span><span style="color:#79B8FF">SUM</span><span style="color:#E1E4E8">(column2)</span></span>
+<span class="line"><span style="color:#E1E4E8">    , column3</span></span>
+<span class="line"><span style="color:#F97583">FROM</span><span style="color:#F97583"> table</span></span></code></pre>
+<br/>
+<p>This doesn’t seem to give us the right answers because we still have everything that isn’t bids. So we need to add another keyword. The <code>WHERE</code> clause
+this allows us to specify specific conditions that need to be met. Like <code>column4 = &#39;bid&#39;</code>. This allows us to drill down.</p>
+<br/>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#F97583">SELECT</span><span style="color:#E1E4E8"> column1</span></span>
+<span class="line"><span style="color:#E1E4E8">    , </span><span style="color:#79B8FF">SUM</span><span style="color:#E1E4E8">(column2)</span></span>
+<span class="line"><span style="color:#E1E4E8">    , column3</span></span>
+<span class="line"><span style="color:#F97583">FROM</span><span style="color:#F97583"> table</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span><span style="color:#E1E4E8"> column4 </span><span style="color:#F97583">=</span><span style="color:#9ECBFF"> &#39;bid&#39;</span></span></code></pre>
+<br/>
+<p>Now that we have the bids we still have multiple columns and not just the answer. This part we can do two ways. We will first solve the original question, ”<strong>What is the total for the bids?</strong>”.
+To do this we can just remove the other columns from the query. This will give us the sum of total bids.</p>
+<br/>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#F97583">SELECT</span><span style="color:#79B8FF"> SUM</span><span style="color:#E1E4E8">(column2)</span></span>
+<span class="line"><span style="color:#F97583">FROM</span><span style="color:#F97583"> table</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span><span style="color:#E1E4E8"> column4 </span><span style="color:#F97583">=</span><span style="color:#9ECBFF"> &#39;bid&#39;</span></span></code></pre>
+<br/>
+<p>This gives us the answer for the bids on the table of 14,776,258. Now say we want to take this and be able to know column 5 which we can call the user initials
+and we can actually rename both columns with what are known as aliases!</p>
+<br/>
+<h3 id="the-secret-alias-for-readability">The secret alias for readability</h3>
+<p>In SQL to make tables and data more readable we often use aliases. This is like adding headers on sheets or excel. Its as easy as just writing
+what you want to name it after, <em>but naming ain’t always easy</em>. You can choose but it is best practice for readability to use the <code>as</code> keyword. For example <code>SELECT SUM(column2) as Total_Value</code>.
+This names the column, provides detail, and lets you and anyone else who needs this query what the name is and where it came from.
+As queries get longer this becomes more important.</p>
+<p>So to get our final answer with some added readability we get;</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0"><code><span class="line"><span style="color:#F97583">SELECT</span><span style="color:#79B8FF"> SUM</span><span style="color:#E1E4E8">(column2) </span><span style="color:#F97583">as</span><span style="color:#E1E4E8"> Total_Value</span></span>
+<span class="line"><span style="color:#F97583">FROM</span><span style="color:#F97583"> table</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span><span style="color:#E1E4E8"> column4 </span><span style="color:#F97583">=</span><span style="color:#9ECBFF"> &#39;bid&#39;</span></span></code></pre>
+<br/>
+<p>Now let’s say column 5 is users how would we get the users total by bid. Check back December 18th 2023 as we continue that lesson — <a href="/sql-for-beginner-2">Grouping and more</a>.</p>
+<hr/>
+<br/>
+<section id="learn"><h2 id="places-to-learn-and-practice">Places to learn and practice</h2><p><p>Here are a few places friends nad I have used over the years to learn and
+develop our SQL skills!</p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Name of site</th><th>How it works</th></tr></thead><tbody><tr><td><a href="https://www.datacamp.com/" target="_blank">datacamp.com</a></td><td>Learn and test new skills with helpful tutorials</td></tr><tr><td><a href="https://leetcode.com/studyplan/top-sql-50/" target="_blank">leetcode.com</a></td><td>Good place for testing knowledge - SQL 50 Linked.</td></tr><tr><td><a href="https://www.w3schools.com/sql/sql_intro.asp" target="_blank">w3schools.com</a></td><td>More explanations and good for reference</td></tr><tr><td><a href="https://www.khanacademy.org/computing/computer-programming/sql" target="_blank">khanacademy.com</a></td><td>Great for free lessons and quizzes</td></tr></tbody></table></section>  </div> </article> </main> <footer data-astro-cid-sz7xmlte>
+&copy; 2023 Rich Fly. All rights reserved.
+<div class="social-links" data-astro-cid-sz7xmlte> <a href="https://twitter.com/astrodotbuild" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Follow Astro on Twitter</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/twitter" data-astro-cid-sz7xmlte><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" data-astro-cid-sz7xmlte></path></svg> </a> <a href="https://github.com/withastro/astro" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Go to Astro's GitHub repo</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github" data-astro-cid-sz7xmlte><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" data-astro-cid-sz7xmlte></path></svg> </a> </div> </footer>  </body></html>
