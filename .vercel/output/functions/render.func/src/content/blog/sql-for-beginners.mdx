@@ -1,0 +1,139 @@
+---
+title: "SQL for beginners"
+description: "Where to Learn and Where to Practice"
+pubDate: "Dec 11 2023"
+heroImage: "/blog-placeholder-3.jpg"
+tags: ["sql", "beginner"]
+---
+
+# SQL, Structured Query Language
+
+SQL, is the language of databases and a powerful way to learn about your products users. There are numerous places to start with SQL and ways to understand it.
+At the bottom of this post in the <a href="#learn">"Places to Learn and Practice"</a> section I provided a few sites to check out.
+
+---
+
+<br />
+
+## Format of SQL
+
+SQL is a structured query language, so it has as stated a structure that you can learn and use to create queries. The beginning of the structure is laid out below;
+
+```sql
+select column1
+    , column2
+    , column3
+from table
+/*
+think of a table like a
+sheet in google sheets or excel
+*/
+```
+
+<br />
+![example sheet](/blog-spreadsheet.jpeg "sheet")
+
+<br />
+So what we did in the above if this was excel or google sheets is specified the columns
+and the sheet as if we had multiple sheets. This allows us to only see the data we
+want from that sheet and not copy it all. In the below we would be copying everything
+from the sheet.
+
+```sql
+select * --the star is kind of like a select all
+from table
+```
+
+<br />
+
+---
+
+<br />
+
+## SUM() questions of the data 😹
+
+Now that isn't very helpful so some of what we want to do is determine a question. So for instance lets say, "**What is the total for the bids?**".
+
+Now what we do is start using a SQL Function or Keyword. The SUM keyword can be used on a specific column. Like below;
+
+```sql
+SELECT column1
+    , SUM(column2)
+    , column3
+FROM table
+```
+
+<br />
+
+This doesn't seem to give us the right answers because we still have everything that isn't bids. So we need to add another keyword. The `WHERE` clause
+this allows us to specify specific conditions that need to be met. Like `column4 = 'bid'`. This allows us to drill down.
+
+<br />
+
+```sql
+SELECT column1
+    , SUM(column2)
+    , column3
+FROM table
+WHERE column4 = 'bid'
+```
+
+<br />
+
+Now that we have the bids we still have multiple columns and not just the answer. This part we can do two ways. We will first solve the original question, "**What is the total for the bids?**".
+To do this we can just remove the other columns from the query. This will give us the sum of total bids.
+
+<br />
+
+```sql
+SELECT SUM(column2)
+FROM table
+WHERE column4 = 'bid'
+```
+
+<br />
+
+This gives us the answer for the bids on the table of 14,776,258. Now say we want to take this and be able to know column 5 which we can call the user initials
+and we can actually rename both columns with what are known as aliases!
+
+<br />
+
+### The secret alias for readability
+
+In SQL to make tables and data more readable we often use aliases. This is like adding headers on sheets or excel. Its as easy as just writing
+what you want to name it after, _but naming ain't always easy_. You can choose but it is best practice for readability to use the `as` keyword. For example `SELECT SUM(column2) as Total_Value`.
+This names the column, provides detail, and lets you and anyone else who needs this query what the name is and where it came from.
+As queries get longer this becomes more important.
+
+So to get our final answer with some added readability we get;
+
+```sql
+SELECT SUM(column2) as Total_Value
+FROM table
+WHERE column4 = 'bid'
+```
+
+<br />
+
+Now let's say column 5 is users how would we get the users total by bid. Check back December 18th 2023 as we continue that lesson -- <a href='/sql-for-beginner-2'>Grouping and more</a>.
+
+---
+
+<br />
+
+<section id="learn">
+## Places to learn and practice
+
+<p>
+  Here are a few places friends nad I have used over the years to learn and
+  develop our SQL skills!
+</p>
+
+| Name of site                                                                                                 | How it works                                      |
+| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
+| <a href="https://www.datacamp.com/" target="_blank">datacamp.com</a>                                         | Learn and test new skills with helpful tutorials  |
+| <a href="https://leetcode.com/studyplan/top-sql-50/" target="_blank">leetcode.com</a>                        | Good place for testing knowledge - SQL 50 Linked. |
+| <a href="https://www.w3schools.com/sql/sql_intro.asp" target="_blank">w3schools.com</a>                      | More explanations and good for reference          |
+| <a href="https://www.khanacademy.org/computing/computer-programming/sql" target="_blank">khanacademy.com</a> | Great for free lessons and quizzes                |
+
+</section>
