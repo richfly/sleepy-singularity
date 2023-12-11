@@ -13,6 +13,8 @@ At the bottom of this post in the <a href="#learn">"Places to Learn and Practice
 
 ---
 
+<br />
+
 ## Format of SQL
 
 SQL is a structured query language, so it has as stated a structure that you can learn and use to create queries. The beginning of the structure is laid out below;
@@ -42,10 +44,46 @@ select * --the star is kind of like a select all
 from table
 ```
 
+<br />
+
+---
+
+<br />
+
+## SUM() questions of the data 😹
+
+Now that isn't very helpful so some of what we want to do is determine a question. So for instance lets say, "**What is the total for the bids**?".
+
+Now what we do is start using a SQL Function or Keyword. The SUM keyword can be used on a specific column. Like below;
+
+```sql
+SELECT column1
+    , SUM(column2)
+    , column3
+FROM table
+```
+
+<br />
+
+This doesn't seem to give us the right answers because we still have everything that isn't bids. So we need to add another keyword. The `WHERE` clause
+this allows us to specify specific conditions that need to be met. Like `column4 = 'bid'`. This allows us to drill down.
+
+<br />
+
+```sql
+SELECT column1
+    , SUM(column2)
+    , column3
+FROM table
+WHERE column4 = 'bid'
+```
+
+<br />
+
 ---
 
 <section id="learn">
-## Places to learn and practive
+## Places to learn and practice
 
 <p>
   Here are a few places friends nad I have used over the years to learn and
