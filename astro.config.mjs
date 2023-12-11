@@ -10,10 +10,4 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   site: "https://example.com",
   integrations: [mdx(), sitemap(), tailwind(), react()],
-  output: "server",
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-  }),
 });
