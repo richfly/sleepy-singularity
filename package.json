@@ -23,6 +23,7 @@
     "framer-motion": "^10.16.16",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "serverless": "link:@astrojs/vercel/serverless",
     "tailwindcss": "^3.0.24"
   }
 }
